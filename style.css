@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image: url('Fondo.png'); */
+    font-family: "poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.screen {
+    background-image: url('Fondo.png');
+    height: 100vh;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 60%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    transform-style: preserve-3d;
+    min-height: 75vh;
+    width: 35rem;
+    border-radius: 30px;
+    padding: 0 5rem;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0 0 50px rgba(0,0,0,0.2);
+}
+
+.cake {
+    min-height: 35vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cake img {
+    width: 20rem;
+    z-index: 2;
+}
+
+.circle{
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(
+        to right,
+        rgba(95, 178, 255, 0.75),
+        rgba(214, 240, 255, 0.75)
+    )
+}
+
+.info h1 {
+    font-size: 4rem;
+    font-family: "Balmonde", 'Sacramento', cursive;
+    color: rgb(102, 50, 0)
+}
+
+.info h3 {
+    font-size: 1.6rem;
+    color: #585858;
+    font-weight: lighter;
+}
+
+.social {
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    color:rgb(95, 178, 255);
+}
+
+.social-icons {
+    border-radius: 50%;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 3rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    padding: 1rem;
+    border: solid 1px rgb(95, 178, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(95, 178, 255);
+}
+.social-icons a i {
+    color:inherit;
+}
+
+.social-icons a:hover {
+    background-color: rgb(95, 178, 255);
+    color:white;
+}
+
+.contact {
+    margin-top: 5rem;
+}
+.contact button {
+    width: 100%;
+    padding: 1rem 0;
+    background: linear-gradient(
+        to right top,
+        rgba(95, 178, 255, 0.75),
+        rgba(214, 240, 255, 0.75)
+    );
+    border-radius: 30px;
+    border: none;
+    cursor:pointer;
+    font-weight: bolder;
+    color: rgb(102, 50, 0);
+    font-size: 1.2rem;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.2);
+}
